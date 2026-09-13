@@ -1,0 +1,155 @@
+:root {
+    --bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --card: #ffffff;
+    --text: #333333;
+    --title: #1a365d;
+    --accent: #2b6cb0;
+    --card-hover: #f8fafc;
+    --p-color: #4a5568;
+    --border: #e2e8f0;
+    --btn: #2b6cb0;
+    --btn-txt: #ffffff;
+    --btn-hover: #1a365d;
+}
+
+#theme-switch:checked ~ .wrapper {
+    --bg: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    --card: #2d3748;
+    --text: #e2e8f0;
+    --title: #90cdf4;
+    --accent: #63b3ed;
+    --card-hover: #4a5568;
+    --p-color: #cbd5e0;
+    --border: #4a5568;
+    --btn: #4299e1;
+    --btn-txt: #1a202c;
+    --btn-hover: #63b3ed;
+}
+
+/* הצגה והסתרה נכונה של הכפתור לפי המצב */
+.light-txt { display: none; }
+.dark-txt { display: inline; }
+
+#theme-switch:checked ~ .wrapper .light-txt { display: inline; }
+#theme-switch:checked ~ .wrapper .dark-txt { display: none; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+}
+
+.wrapper {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+.mode-btn {
+    display: table;
+    margin: 0 auto 20px auto;
+    background: var(--btn);
+    color: var(--btn-txt);
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.mode-btn:hover {
+    background: var(--btn-hover);
+}
+
+.main-card, .content-box {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.content-box {
+    text-align: left;
+}
+
+.main-card h1 {
+    color: var(--title);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.main-card h2 {
+    color: var(--accent);
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.main-card img {
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+.content-box h3 {
+    color: var(--title);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 6px;
+    margin-top: 0;
+}
+
+.skills-list {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.skills-list li {
+    margin-bottom: 6px;
+}
+
+.mini-project {
+    background: var(--card-hover);
+    border-left: 3px solid var(--accent);
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 3px;
+}
+
+.mini-project h4 {
+    margin: 0 0 4px 0;
+    color: var(--accent);
+}
+
+.mini-project p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--p-color);
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials a {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--btn);
+    color: var(--btn-txt);
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin: 4px 6px;
+}
+
+.socials a:hover {
+    background: var(--btn-hover);
+}
