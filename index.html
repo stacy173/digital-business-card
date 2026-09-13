@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy's Personal Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- dark mode toggle hack -->
+    <input type="checkbox" id="theme-switch" style="display: none;">
+
+    <div class="wrapper">
+        <label for="theme-switch" class="mode-btn">
+            <span class="dark-txt">Dark Mode</span>
+            <span class="light-txt">Light Mode</span>
+        </label>
+
+        <header class="main-card">
+            <h1>Stacy Greenberg</h1>
+            <img src="student_image.jpg" alt="profile pic" width="140" />
+            <h2>Computer Science Student</h2>
+            <p>Computer Science student with practical DevOps background from the army. Love building things, automating stuff, and picking up new tech along the way.</p>
+        </header>
+
+        <section class="content-box">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                <li><strong>Infrastructure:</strong> Docker, Kubernetes, GitLab CI/CD, OpenShift, VMware, Nutanix, Git</li>
+                <li><strong>Monitoring:</strong> Prometheus, Grafana, vROps, Log Insight</li>
+                <li><strong>Code:</strong> Python, PowerShell, Java, REST APIs</li>
+            </ul>
+        </section>
+
+        <section class="content-box">
+            <h3>Projects</h3>
+            
+            <div class="mini-project">
+                <h4>Connect Four</h4>
+                <p>Classic Java Connect Four with a full GUI, built using OOP principles and supports multiplayer.</p>
+            </div>
+
+            <div class="mini-project">
+                <h4>DevOps Monitoring Dashboard</h4>
+                <p>A web dashboard prototype that tracks mock servers and container metrics using CSS custom properties.</p>
+            </div>
+        </section>
+
+        <section class="content-box socials">
+            <a href="https://linkedin.com/in/example-stacy" target="_blank">LinkedIn</a>
+            <a href="https://github.com/example-stacy" target="_blank">GitHub</a>
+            <a href="mailto:stacy.dev.example@gmail.com">Email</a>
+            <a href="tel:0501234567">Call Me</a>
+        </section>
+    </div>
+
+</body>
+</html>
