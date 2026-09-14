@@ -3,56 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stacy's Personal Site</title>
+    <title>Stacy Greenberg — DevOps & CS Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- dark mode toggle hack -->
-    <input type="checkbox" id="theme-switch" style="display: none;">
-
+<input type="checkbox" id="theme-switch">
     <div class="wrapper">
-        <label for="theme-switch" class="mode-btn">
-            <span class="dark-txt">Dark Mode</span>
-            <span class="light-txt">Light Mode</span>
-        </label>
+        <div class="top-bar">
+            <span class="status-badge"><span class="pulse"></span> Open to opportunities</span>
+            <label for="theme-switch" class="mode-btn" aria-label="Toggle theme">
+                <span class="dark-txt"> Dark mode </span>
+                <span class="light-txt"> Light mode </span>
+            </label>
+        </div>
 
         <header class="main-card">
-            <h1>Stacy Greenberg</h1>
-            <img src="student_image.jpg" alt="profile pic" width="140" />
-            <h2>Computer Science Student</h2>
-            <p>Computer Science student with practical DevOps background from the army. Love building things, automating stuff, and picking up new tech along the way.</p>
+            <img src="my_image.jpeg" alt="Stacy Greenberg" class="profile-pic" width="100" height="100" />
+            <div class="header-info">
+                <h1>Stacy Greenberg</h1>
+                <h2>Computer Science Student &middot; Ex-Army DevOps</h2>
+                <p>CS student and ex-Army DevOps practitioner who loves building reliable systems, traveling to new places, and occasionally losing friendships over a game of Catan. </p>
+            </div>
         </header>
 
         <section class="content-box">
-            <h3>Skills</h3>
-            <ul class="skills-list">
-                <li><strong>Infrastructure:</strong> Docker, Kubernetes, GitLab CI/CD, OpenShift, VMware, Nutanix, Git</li>
-                <li><strong>Monitoring:</strong> Prometheus, Grafana, vROps, Log Insight</li>
-                <li><strong>Code:</strong> Python, PowerShell, Java, REST APIs</li>
-            </ul>
+            <h3>Tech Stack</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <span class="skill-label">Infrastructure</span>
+                    <div class="tags">
+                        <span>Docker</span><span>Kubernetes</span><span>GitLab CI/CD</span><span>OpenShift</span><span>VMware</span><span>Nutanix</span><span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Monitoring</span>
+                    <div class="tags">
+                        <span>Prometheus</span><span>Grafana</span><span>vROps</span><span>Log Insight</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Languages</span>
+                    <div class="tags">
+                        <span>Python</span><span>PowerShell</span><span>Java</span><span>REST APIs</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="content-box">
-            <h3>Projects</h3>
+            <h3>Featured Projects</h3>
             
-            <div class="mini-project">
-                <h4>Connect Four</h4>
-                <p>Classic Java Connect Four with a full GUI, built using OOP principles and supports multiplayer.</p>
-            </div>
+            <div class="projects-grid">
+                <div class="mini-project">
+                    <div class="project-header">
+                        <h4>Connect Four</h4>
+                        <span class="tech-tag">Java / OOP</span>
+                    </div>
+                    <p>Classic Java Connect Four featuring a full custom GUI, robust OOP principles, and local multiplayer support.</p>
+                </div>
 
-            <div class="mini-project">
-                <h4>DevOps Monitoring Dashboard</h4>
-                <p>A web dashboard prototype that tracks mock servers and container metrics using CSS custom properties.</p>
+                <div class="mini-project">
+                    <div class="project-header">
+                        <h4>DevOps Monitoring Dashboard</h4>
+                        <span class="tech-tag">Web Prototype</span>
+                    </div>
+                    <p>A responsive web dashboard prototype built to track mock servers and live container metrics using CSS custom properties.</p>
+                </div>
             </div>
         </section>
 
-        <section class="content-box socials">
-            <a href="https://linkedin.com/in/example-stacy" target="_blank">LinkedIn</a>
-            <a href="https://github.com/example-stacy" target="_blank">GitHub</a>
-            <a href="mailto:stacy.dev.example@gmail.com">Email</a>
-            <a href="tel:0501234567">Call Me</a>
-        </section>
+        <footer class="content-box socials-box">
+            <div class="socials">
+                <a href="https://linkedin.com/in/example-stacy" target="_blank">LinkedIn</a>
+                <a href="https://github.com/example-stacy" target="_blank">GitHub</a>
+                <a href="mailto:stacy.dev.example@gmail.com">Email Me</a>
+                <a href="tel:0501234567">Call</a>
+            </div>
+        </footer>
     </div>
 
 </body>
