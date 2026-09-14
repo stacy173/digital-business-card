@@ -15,11 +15,13 @@
     --tag-text: #334155;
 }
 
+/* מסתיר את הצ'קבוקס בצורה תקינה דרך קובץ ה-CSS */
 #theme-switch {
     display: none;
 }
 
-#theme-switch:checked ~ .wrapper {
+/* מחיל את צבעי ה-Dark Mode על כל המסך */
+body:has(#theme-switch:checked) {
     --bg: #090d16;
     --card: #111827;
     --text: #f3f4f6;
@@ -39,8 +41,9 @@
 .light-txt { display: none; }
 .dark-txt { display: inline; }
 
-#theme-switch:checked ~ .wrapper .light-txt { display: inline; }
-#theme-switch:checked ~ .wrapper .dark-txt { display: none; }
+/* מחליף את הטקסט של הכפתור בהתאם למצב */
+body:has(#theme-switch:checked) .light-txt { display: inline; }
+body:has(#theme-switch:checked) .dark-txt { display: none; }
 
 body {
     margin: 0;
